@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let product of products">
+      <img class="img-fluid" routerLink="{{ product.url_imagem }}" />
+      <div class="box-element product">
+        <h6>
+          <strong>{{ product.descricao }}</strong>
+        </h6>
+        <hr />
+        <a class="btn btn-outline-success" href="#">Detalhes</a>
+      </div>
+    </div>
+  </div>
+</div>
